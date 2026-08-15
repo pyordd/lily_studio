@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lily_studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="top_bar"> <!--상단에 보이는 메뉴들-->
+        <div class="language"> <!--언어변경 버튼-->
+            <span>
+                <button type="button" aria-label="언어변경">KR</button>
+            </span>
+        </div> 
+
+        <nav class="top_info">    <!--클릭하면 화면 전환되는 정보들-->
+          <a href="#About">About</a>
+          <a href="#Rooms">Rooms</a>
+          <a href="#Guide">Guide</a>
+          <a href="#Location">Location</a>  
+        </nav>    
+
+        <div class="menu">
+            <button type="button" aria-label="삼선 메뉴">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+    <main> 
+        <section> <!--로고,스튜디오 이름-->
+            <div class="logo">
+                <img src="image/lily_studio_simbol.svg" alt="심볼 로고">
+            </div>
+            <div class="lily_studio">
+                <img src="image/lily_studio_typo.svg" alt="타이포 로고">
+            </div>
+        </section>  
+
+        <section class="main_display"> <!--처음 메인화면에 보이는 설명이랑 스튜디오 대표사진-->
+            <div class="main_text">
+                <p class="main_text_head"><strong>Studio LILY is a creative space where architecture meets refined aesthetics.</strong></p>
+                <p>우리는 비워진 공간 속에서 정돈된 구조와 자연스러운 미학을 탐구합니다.</p>
+                <p>절제된 실루엣과 감각적인 소재의 조화를 통해 오래도록 기억될 가치를 만듭니다.</p>
+                <p>주거, 상업, 인테리어 디자인 전반에 걸친 맞춤형 디자인 솔루션을 제안합니다.</p>
+                <p>스튜디오 리리와 함께 당신만의 독창적인 공간과 브랜드를 완성해보세요.</p>
+            </div>
+            <div class="main_image">
+                <img src="image/main_image.jpg" alt="스튜디오 대표 이미지">
+            </div>
+        </section>
+
+        <section class="room_image"> <!--메인 피드-->
+            <img src="image/room1.jpg" alt="룸1이미지">
+            <img src="image/room2.jpg" alt="룸2이미지">
+            <img src="image/room3.jpg" alt="룸3이미지">
+        </section>
+
+    </main>
+    
+    <div id="contact"> <!--컨텍 아이콘 왼쪽 하단 화면 고정-->
+        <button type="button" aria-label="컨텍-아이콘">
+            <i class="fa-regular fa-envelope"></i>
+        </button>
+    </div>
+    <footer class="bottom_info">
+        <div class="sns_icon"><!--sns 정보-->
+            <div>
+                <img src="image/instagram_logo.png" alt="인스타 로고">
+            </div>
+            <div>
+                <img src="image/naver_blog_icon.svg" alt="네이버 블로그 로고">
+            </div>
+        </div>
+         <!--하단 정보 상호명 연락처 등등-->
+        <div class="name">
+            <p>
+            상호명 : 릴리스튜디오
+            </p>
+            <p>
+            연락처 : 010-0000-0000
+            </p>
+            <p>
+            위치 : 경기도 남양주시
+            </p>
+            <p>
+            메일 : lty773@gmail.com
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
