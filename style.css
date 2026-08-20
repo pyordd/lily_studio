@@ -42,6 +42,58 @@ img {
     z-index: 100;
 }
 
+.language{
+    display: inline-flex;   
+    align-items: center;
+    gap: 4px;
+}
+
+.lang_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang_menu {
+    display: none; /* 화면에서 숨김 */
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    min-width: max-content;
+    list-style: none;
+    padding: 8px 0;
+    margin: 4px 0 0 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.lang_dropdown.active .lang_menu {
+    display: block;
+}
+
+.lang_option {
+    font-size: 20px;
+    color: gray;
+    padding: 6px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.lang_option:hover {
+    background-color: #f0f0f0;
+}
+
+.fa-chevron-down{
+    font-size: 15px;
+    transition: transform 0.3s;
+}
+
+.lang_dropdown.active .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
 .top_info{
     display: flex;
     align-items: center;
@@ -162,4 +214,27 @@ main {
     color: gray;
     margin-left: 30px;
     margin-bottom: 30px;
+}
+
+/* 화면 너비가 768px 이하(모바일/작은 화면)일 때 적용 */
+@media (max-width: 768px) {
+    /* 1. 상단 바 메뉴 숨기고 햄버거 버튼만 남기기 */
+    .top_info {
+        display: none; 
+    }
+
+    /* 2. 메인 디스플레이를 가로 배치에서 세로 배치(위->아래)로 전환 */
+    .main_display {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* 3. 텍스트 글자 크기 모바일에 맞춰 조절 */
+    .main_text {
+        font-size: 15px;
+    }
+
+    .main_text_head {
+        font-size: 18px;
+    }
 }

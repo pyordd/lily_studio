@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
+    
 </head>
 <body>
     <header class="top_bar"> <!--상단에 보이는 메뉴들-->
-        <div class="language"> <!--언어변경 버튼-->
-            <span>
-                <button type="button" aria-label="언어변경">KR</button>
-            </span>
+        <div class="lang_dropdown"> <!--언어변경 버튼-->
+                <button type="button" aria-label="언어변경" class="language">KR
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>  
+            <ul class="lang_menu">
+                <li class="lang_option">KR</li>
+                <li class="lang_option">EN</li>
+            </ul>
         </div> 
-
+        
         <nav class="top_info">    <!--클릭하면 화면 전환되는 정보들-->
           <a href="#About">About</a>
           <a href="#Rooms">Rooms</a>
@@ -44,10 +49,10 @@
         <section class="main_display"> <!--처음 메인화면에 보이는 설명이랑 스튜디오 대표사진-->
             <div class="main_text">
                 <p class="main_text_head"><strong>Studio LILY is a creative space where architecture meets refined aesthetics.</strong></p>
-                <p>우리는 비워진 공간 속에서 정돈된 구조와 자연스러운 미학을 탐구합니다.</p>
-                <p>절제된 실루엣과 감각적인 소재의 조화를 통해 오래도록 기억될 가치를 만듭니다.</p>
-                <p>주거, 상업, 인테리어 디자인 전반에 걸친 맞춤형 디자인 솔루션을 제안합니다.</p>
-                <p>스튜디오 리리와 함께 당신만의 독창적인 공간과 브랜드를 완성해보세요.</p>
+                <p data-i18n="main_text">우리는 비워진 공간 속에서 정돈된 구조와 자연스러운 미학을 탐구합니다.<br>
+                절제된 실루엣과 감각적인 소재의 조화를 통해 오래도록 기억될 가치를 만듭니다.<br>
+                주거, 상업, 인테리어 디자인 전반에 걸친 맞춤형 디자인 솔루션을 제안합니다.<br>
+                스튜디오 리리와 함께 당신만의 독창적인 공간과 브랜드를 완성해보세요.</p>
             </div>
             <div class="main_image">
                 <img src="image/main_image.jpg" alt="스튜디오 대표 이미지">
@@ -78,18 +83,10 @@
         </div>
          <!--하단 정보 상호명 연락처 등등-->
         <div class="name">
-            <p>
-            상호명 : 릴리스튜디오
-            </p>
-            <p>
-            연락처 : 010-0000-0000
-            </p>
-            <p>
-            위치 : 경기도 남양주시
-            </p>
-            <p>
-            메일 : lty773@gmail.com
-            </p>
+            <p data-i18n="footer_name">상호명 : 릴리스튜디오</p>
+            <p data-i18n="footer_phone">연락처 : 010-0000-0000</p>
+            <p data-i18n="footer_locate">위치 : 경기도 남양주시</p>
+            <p data-i18n="footer_mail">메일 : lty773@gmail.com</p>
         </div>
     </footer>
 </body>
